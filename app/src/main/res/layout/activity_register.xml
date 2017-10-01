@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.labdesenvolvimento.loteriaapp.RegisterActivity">
+
+    <TextView
+        android:text="E-Mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:id="@+id/txtEmailRegister"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPassRegister"
+        android:textSize="18sp"
+        android:layout_below="@+id/txtEmailRegister"
+        android:layout_alignStart="@+id/txtEmailRegister"
+        android:layout_marginTop="76dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="18dp"
+        android:id="@+id/editEmail"
+        android:layout_below="@+id/txtEmailRegister"
+        android:layout_alignStart="@+id/txtPassRegister"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/txtPassRegister"
+        android:layout_alignEnd="@+id/editEmail"
+        android:layout_marginTop="18dp"
+        android:id="@+id/editPasswordRegister"
+        android:layout_alignStart="@+id/txtPassRegister"/>
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CancelRegister"
+        android:layout_alignBaseline="@+id/RegisterConfirm"
+        android:layout_alignBottom="@+id/RegisterConfirm"
+        android:layout_toEndOf="@+id/RegisterConfirm"/>
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegisterConfirm"
+        android:layout_below="@+id/editPasswordRegister"
+        android:layout_alignStart="@+id/editPasswordRegister"
+        android:layout_marginTop="22dp"/>
+</RelativeLayout>
